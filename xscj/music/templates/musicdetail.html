@@ -12,7 +12,7 @@
                 <p class="card-text">
                     {% if music.url %}
                     <a href="{{ music.url }}" class="btn btn-primary">
-                        电影资源链接
+                        在线听歌链接
                     </a>
                     {% endif %}
                     {% if user.is_authenticated %}
@@ -22,7 +22,7 @@
                     {% endif %}
                 </p>
                  <hr/>
-                <h3>影评</h3>
+                <h3>短评</h3>
                 <ul class="list-group">
                     {% for review in reviews %}
                     <li class="list-group-item pb-3 pt-3">
