@@ -44,4 +44,5 @@ def loginaccount(request) :
             return render(request, 'loginaccount.html', {'form':AuthenticationForm, 'error':'用户名或密码错误' })
         else:
             login(request, user)
+            return redirect('musichome')
 
